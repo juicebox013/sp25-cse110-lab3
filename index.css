@@ -28,7 +28,7 @@ h1, h2 {
     font-family: "Copperplate", "Papyrus", fantasy;
 }
 
-h3 {
+h3#heading {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -160,3 +160,46 @@ h3 {
         text-align: center;
     }
   }
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+strong {
+    color: rebeccapurple;
+    
+    &:hover {
+        color: blue;
+    }
+}
+
+  li[class="a"] {
+    color: yellow;
+  }
+
+  .container p {
+    color: red;
+  }
+
+  ul > li {
+    border-top: 5px solid red;
+  }
+
+  h3 + p {
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em;
+  }
+
+  h2 ~ p {
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em;
+  }
+
+  h2:has(+ p) {
+    margin-bottom: 0;
+  }
+
