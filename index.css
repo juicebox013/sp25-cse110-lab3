@@ -167,7 +167,7 @@ h3#heading {
 
 strong {
     color: rebeccapurple;
-    
+
     &:hover {
         color: blue;
     }
@@ -203,3 +203,4 @@ strong {
     margin-bottom: 0;
   }
 
+/*testing*/
