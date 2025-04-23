@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
 button {
     background-color: var(--white, yellow);
     color: var(--blue);
@@ -5,10 +7,18 @@ button {
     padding: 5px;
   }
 
-button.hover {
+button:hover {
     background-color: var(--blue, blue);
     color: var(--white);
   }
+
+button:active {
+    color: yellow;
+}
+
+body {
+    background-color: #D3D3D3;
+}
 
 p {
     font-family: Arial, Helvetica, sans-serif;
@@ -21,3 +31,132 @@ h1, h2 {
 h3 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+.business-container {
+    display: flex;
+    gap: 20px;
+}
+
+.old-news-box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 5px;
+    padding: 20px, 20px, 20px, 20px;
+    width: 800px;
+    height: 100%
+}
+
+.new-news-box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    width: 800px;
+    height: 100%
+}
+
+.agenda-section {
+    margin-bottom: 20px;
+}
+
+.title-section {
+    margin: auto;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.header1 {
+    margin: 20px, 20px, 20px, 20px;
+}
+
+.comments-section {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 5px;
+    margin-top: 80px;
+    text-align: center;
+    padding: 20px;
+}
+
+.images-container {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border: 1px solid red;
+}
+
+.stacked-image1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.stacked-image2 {
+    position: absolute;
+    top: 20px;
+    left: 350px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- New Grid Layout --- */
+.grid-container {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px; 
+    padding: 20px; 
+    border: 2px solid green; 
+    margin-top: 30px; 
+  }
+  
+
+.grid-container > * { 
+    background-color: #f0f0f0; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    text-align: center;
+  }
+
+  /* --- Responsive Styles --- */
+
+
+@media (max-width: 768px) {
+
+    
+    .main-content {
+      flex-direction: column; /* Change from row (default) to column */
+      align-items: stretch; /* Ensure items stretch to full width */
+    }
+  
+    
+    .business-container {
+      flex-direction: column; /* Change from row to column */
+      align-items: stretch; /* Ensure items stretch to full width */
+    }
+  
+   
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr); /* Change to 2 columns */
+    }
+  
+    
+    .stacked-image2 {
+      left: 15px; /* May need adjustment if container width changes drastically */
+      top: 10px;
+    }
+  
+    
+    .title-section {
+        text-align: center;
+    }
+  }

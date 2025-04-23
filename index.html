@@ -16,7 +16,7 @@
   </head>
   <body>
     <header>
-    <h1> SpongeScript SquarePants Meeting !</h1>
+    <h1 class="title-section"> SpongeScript SquarePants Meeting !</h1>
     <hr/>
     </header>
     <main>
@@ -33,7 +33,7 @@
           </nav>
         <section> 
             <div>
-                <h2 style="color:red"> group project brainstorming</h2>
+                <h2 class="h1-section" style="color:red"> group project brainstorming</h2>
             </div>
         </section>
         <section> 
@@ -49,7 +49,7 @@
                </p>
             </div>
         </section>
-        <section> 
+        <section class="agenda-section"> 
             <div>
                 <h3> agenda </h3>
                 <details>
@@ -63,86 +63,88 @@
                 </details>
             </div>
         </section>
-        <section> 
-            <div>
-                <h3> old business </h3>
-                <p> <b>Previously</b>, the team shared a little about themselves to the group in an attempt to get to know
-                    each other. During the last meeting, we also shared our <strong>availabilities</strong> and created a <i>when2meet</i> 
-                    link in order to gain a better understanding of when everyone is free for group meetings.
-                </p>
-            </div>
-        </section>
-        <section> 
-            <div>
-                <h3> new business </h3>
-                <p>
-                    Today, we must go over the things on the agenda. To start things off, the team will discuss the team name as well as submit
-                    their designs for the team logo. <br/>
+        <div class="business-container">
+            <section> 
+                <div class="old-news-box">
+                    <h3> old business </h3>
+                    <p> <b>Previously</b>, the team shared a little about themselves to the group in an attempt to get to know
+                        each other. During the last meeting, we also shared our <strong>availabilities</strong> and created a <i>when2meet</i> 
+                        link in order to gain a better understanding of when everyone is free for group meetings.
+                    </p>
+                </div>
+            </section>
+            <section> 
+                <div class="new-news-box">
+                    <h3> new business </h3>
+                    <p>
+                        Today, we must go over the things on the agenda. To start things off, the team will discuss the team name as well as submit
+                        their designs for the team logo. <br/>
+                        
+                        Shortly after this, we will include a short snippet of ourselves as well as a a link to 
+                        your own personal github. please do this <em> ASAP !</em>. 
+                    </p>
                     
-                    Shortly after this, we will include a short snippet of ourselves as well as a a link to 
-                    your own personal github. please do this <em> ASAP !</em>. 
-                </p>
-                
-                    <br/>
+                        <br/>
 
-                    please submit your name and email below so we can keep track of who is who. 
-                    <form method="get" class="form-example">
-                        <div class="form-example">
-                          <label for="name">Enter your name: </label>
-                          <input type="text" name="name" id="name" required />
-                        </div>
-                        <div class="form-example">
-                          <label for="email">Enter your email: </label>
-                          <input type="email" name="email" id="email" required />
-                        </div>
-                        <div class="form-example">
-                          <input type="submit" value="Submit" />
-                        </div>
-                    </form>
-                    <br/> 
-                    <form>
-                        <fieldset>
-                          <legend>Choose your favorite genre</legend>
-                      
-                          <input type="radio" id="kpop"/>
-                          <label for="kpop">Kpop</label><br />
-                      
-                          <input type="radio" id="rnb"/>
-                          <label for="rnb">RnB</label><br />
-                      
-                          <input type="radio" id="lofi"/>
-                          <label for="lofi">LoFi</label>
-                        </fieldset>
-                    </form> <br/>
+                        please submit your name and email below so we can keep track of who is who. 
+                        <form method="get" class="form-example">
+                            <div class="form-example">
+                            <label for="name">Enter your name: </label>
+                            <input type="text" name="name" id="name" required />
+                            </div>
+                            <div class="form-example">
+                            <label for="email">Enter your email: </label>
+                            <input type="email" name="email" id="email" required />
+                            </div>
+                            <div class="form-example">
+                            <input type="submit" value="Submit" />
+                            </div>
+                        </form>
+                        <br/> 
+                        <form>
+                            <fieldset>
+                            <legend>Choose your favorite genre</legend>
+                        
+                            <input type="radio" id="kpop"/>
+                            <label for="kpop">Kpop</label><br />
+                        
+                            <input type="radio" id="rnb"/>
+                            <label for="rnb">RnB</label><br />
+                        
+                            <input type="radio" id="lofi"/>
+                            <label for="lofi">LoFi</label>
+                            </fieldset>
+                        </form> <br/>
 
-                    <label for="ice-cream-choice">Choose your favorite ice cream flavor:</label>
-                    <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+                        <label for="ice-cream-choice">Choose your favorite ice cream flavor:</label>
+                        <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
 
-                    <datalist id="ice-cream-flavors">
-                    <option value="Chocolate"></option>
-                    <option value="Coconut"></option>
-                    <option value="Mint"></option>
-                    <option value="Strawberry"></option>
-                    <option value="Vanilla"></option>
-                    </datalist> <br/>
+                        <datalist id="ice-cream-flavors">
+                        <option value="Chocolate"></option>
+                        <option value="Coconut"></option>
+                        <option value="Mint"></option>
+                        <option value="Strawberry"></option>
+                        <option value="Vanilla"></option>
+                        </datalist> <br/>
 
-                    <label for="pet-select">Choose a team mascot animal:</label>
+                        <label for="pet-select">Choose a team mascot animal:</label>
 
-                    <select name="pets" id="pet-select">
-                    <option value="">--Please choose an option--</option>
-                    <option value="dog">Dog</option>
-                    <option value="cat">Cat</option>
-                    <option value="hamster">Hamster</option>
-                    <option value="parrot">Parrot</option>
-                    <option value="spider">Spider</option>
-                    <option value="goldfish">Goldfish</option>
-                    </select>
+                        <select name="pets" id="pet-select">
+                        <option value="">--Please choose an option--</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="hamster">Hamster</option>
+                        <option value="parrot">Parrot</option>
+                        <option value="spider">Spider</option>
+                        <option value="goldfish">Goldfish</option>
+                        </select>
 
-                
-            </div>
-        </section>
+                    
+                </div>
+            </section>
+        </div>
         <section> 
-            <div>
+            <div class="comments-section">
                 <h3> comments </h3>
                 <p> 
                     as suggested by team members, here is a <a href="https://www.youtube.com/watch?v=88GkYKvnvvI">link</a> to an inspirational
@@ -154,14 +156,26 @@
                 <textarea id="feedback" rows="5" cols="33">
                 the meeting was too long. 
                 </textarea>
+
+                <div class="grid-container">
+                    <div>too long</div>
+                    <div>too boring</div>
+                    <div>couldve been an email</div>
+                    <div>unnecessary</div>
+                    <div>i loved the meeting</div>
+                </div>
+
             </div>
         </section>
-        <section> 
-            <div>
-                <h3> images </h3>
-                <img src="thumbs-up-cat.jpg" alt="cat doing thumbs up"> <img src="ucsd-petr.jpg" alt="ucsd petr">
-            </div>
-        </section>
+        <div class="images-container">
+            <section> 
+                <div>
+                    <h3> images </h3>
+                    <img src="thumbs-up-cat.jpg" alt="cat doing thumbs up" class="stacked-image1"> 
+                    <img src="ucsd-petr.jpg" alt="ucsd petr" class="stacked-image2">
+                </div>
+            </section>
+        </div>
         <section> 
             <div>
                 <h3> recordings </h3>
