@@ -45,11 +45,10 @@ h3 {
     padding: 20px 20px 20px 20px;
     width: 800px;
     height: 100%;
-    & > i {
-        &:hover {
-          color: blue; /* Change color to blue on hover */
-        }
-    }
+}
+
+.old-news-box > i:hover {
+    color: blue;
 }
 
 .new-news-box {
