@@ -42,7 +42,7 @@ h3 {
     border-color: black;
     border-width: 5px;
     border-radius: 5px;
-    padding: 20px, 20px, 20px, 20px;
+    padding: 20px 20px 20px 20px;
     width: 800px;
     height: 100%
 }
@@ -70,7 +70,7 @@ h3 {
 }
 
 .header1 {
-    margin: 20px, 20px, 20px, 20px;
+    margin: 20px 20px 20px 20px;
 }
 
 .comments-section {
