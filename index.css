@@ -45,16 +45,11 @@ h3 {
     padding: 20px 20px 20px 20px;
     width: 800px;
     height: 100%
-    i, em {
-    /* Optional: Add a transition for a smoother color change */
-    transition: color 0.2s ease;
-
-    /* Nested hover state using '&' */
-    &:hover {
-      color: blue; /* Change color to blue on hover */
-      cursor: pointer; /* Optional: Change cursor to indicate interactivity */
+    & > i {
+        &:hover {
+          color: blue; /* Change color to blue on hover */
+        }
     }
-  }
 }
 
 .new-news-box {
